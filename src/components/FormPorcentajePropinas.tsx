@@ -23,7 +23,7 @@ tip: number
 
 export default function FormPorcentajePropinas({setTip,tip}: FormPorcentajePropinasProps) {
   return (
-    <div>
+    <div className="text-white">
         <h3 className="font-black text-2xl"> propina:</h3>
         <form>
             {tipOptions.map((tipOptions) => (

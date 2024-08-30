@@ -4,6 +4,8 @@ import useOrder from "./hook/useOrder"
 import OrderContents from "./components/orderContents"
 import OrdersTotals from './components/ordersTotals';
 import FormPorcentajePropinas from "./components/FormPorcentajePropinas";
+import Header from './components/Header';
+
 
 
 
@@ -14,16 +16,16 @@ function App() {
 
   
   return (
-    <>
-    
-    <header className="bg-teal-400 py-5">
-      <h1 className="text-center  font-black text-4xl" >Calculadora de propinas y Consumo </h1>
-    </header>
+    <div className="min-h-screen bg-gradient-to-br from-[#5A8CA9] via-[#7D5CA8] to-[#d3aed2] p-6">
+
+    <Header/>
+
+
 
     <main className="max-w-7xl mx-auto mt-20  grid md:grid-cols-2">
       <div className="p-5"> 
-        <h2 className="text-4xl font-bold">Menu</h2>
-        <div className="space-y-3 mt-10">
+        <h2 className="text-4xl font-bold text-white">Menu</h2>
+        <div className="space-y-3 mt-10 ">
         {menuItems.map(item =>(
 
           <MenuItem
@@ -58,7 +60,7 @@ function App() {
           </>
         ):(
           
-            <p className="text-center">La orden esta vacia </p>
+            <p className="text-center text-white text-3xl font-bold">La orden esta vacia </p>
 
                 
         )} 
@@ -66,7 +68,7 @@ function App() {
       
       </div>
     </main>
-    </>
+    </div>
   )
 }
 
