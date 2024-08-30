@@ -1,4 +1,4 @@
-import { FaCalculator, FaGithub } from "react-icons/fa";
+import {  FaGithub } from "react-icons/fa";
 
 function Header() {
   return (
