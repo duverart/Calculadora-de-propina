@@ -1,8 +1,8 @@
 import MenuItem from "./components/MenuItems"
 import { menuItems } from "./data/db"
 import useOrder from "./hook/useOrder"
-import OrderContents from "./components/orderContents"
-import OrdersTotals from './components/ordersTotals';
+import OrderContents from "./components/OrderContents"
+import OrdersTotals from './components/OrdersTotals';
 import FormPorcentajePropinas from "./components/FormPorcentajePropinas";
 import Header from './components/Header';
 

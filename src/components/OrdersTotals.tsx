@@ -1,5 +1,5 @@
 import { OrderItem } from "../types"
-import { formatCurrency } from '../helpers/index';
+import { formatCurrency } from '../helpers';
 import { useMemo } from "react";
 
 type OrdersTotalsProps={
