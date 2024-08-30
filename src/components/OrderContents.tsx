@@ -1,5 +1,6 @@
 import { MenuItem, OrderItem } from "../types"
 import { formatCurrency } from '../helpers';
+import { FaTrashCanArrowUp } from "react-icons/fa6";
 
 type OrderContentsProps={
     order: OrderItem[] 
@@ -24,9 +25,9 @@ export default function orderContents({order,removeItem}: OrderContentsProps) {
                                 cantidad:{item.quantity} -  {formatCurrency(item.price * item.quantity)}
                             </p>
                         </div>
-                        <button className="text-center bg-red-500 h-8 w-8 rounded-full text-white font-black"
-                        onClick={() => removeItem(item.id)}>
-                            X
+                        <button 
+                        onClick={() => removeItem(item.id) }>
+                            <FaTrashCanArrowUp className="text-3xl" />
                         </button>
                     </div>
                 ))
