@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Calculadora de Propinas y Consumo 💰
 
-Currently, two official plugins are available:
+Este proyecto es una calculadora de propinas y consumo construida con React y TypeScript. Permite a los usuarios:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Seleccionar productos de un menú: Elige entre una variedad de productos con sus precios.
+Agregar productos a la orden: Añade la cantidad deseada de cada producto a la orden.
+Calcular el total de la orden: Observa el subtotal, la propina y el total a pagar.
+Ajustar el porcentaje de propina: Selecciona entre diferentes porcentajes de propina predefinidos.
+Guardar la orden: Guarda la orden con el total final.
+Características principales ✨
+Interfaz de usuario intuitiva y fácil de usar.
+Cálculo preciso de propinas y totales.
+Manejo eficiente de la orden.
 
-## Expanding the ESLint configuration
+Cómo ejecutar el proyecto 🚀
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clona el repositorio: git clone https://github.com/duverart/Calculadora-de-propina.git
+Instala las dependencias: npm install
+Inicia el servidor de desarrollo: npm run dev
+Abre la aplicación en tu navegador: http://localhost:5173/
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Tecnologías utilizadas 💻
+React
+TypeScript
+TailwindCSS
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Autor ✍️
+Jose Duverge DuverArt
+Licencia 📄
+Este proyecto está bajo la Licencia  Apache 2.0.
