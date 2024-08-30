@@ -1,6 +1,6 @@
-import { useMemo } from "react"
 import { OrderItem } from "../types"
 import { formatCurrency } from '../helpers/index';
+import { useMemo } from "react";
 
 type OrdersTotalsProps={
     order:OrderItem[]
@@ -12,7 +12,7 @@ export default function OrdersTotals({order, tip,placeOrder}:OrdersTotalsProps) 
     
     const subTotalPagar = useMemo(() => order.reduce( (total, item) => total + ( item.quantity * item.price ), 0 ), [order])
     const tips = useMemo(() => subTotalPagar * tip, [subTotalPagar, tip])
-    const totalPagar = useMemo(() => subTotalPagar + tips,[tip, order])
+    const totalPagar = useMemo(() => subTotalPagar + tips,[subTotalPagar, tips])
  
 
   return (
